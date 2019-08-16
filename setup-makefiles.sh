@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DEVICE=m8qlul
+DEVICE=a52
 VENDOR=htc
 
 OUTDIR=vendor/$VENDOR/$DEVICE
@@ -142,7 +142,7 @@ EOF
 
 LOCAL_PATH := \$(call my-dir)
 
-ifeq (\$(TARGET_DEVICE),m8qlul)
+ifeq (\$(TARGET_DEVICE),a52)
 ifeq (\$(QCPATH),)
 
 include \$(CLEAR_VARS)

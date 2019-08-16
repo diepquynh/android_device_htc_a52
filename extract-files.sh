@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #set -e
-export DEVICE=m8qlul
+export DEVICE=a52
 export VENDOR=htc
 
 if [ $# -eq 0 ]; then

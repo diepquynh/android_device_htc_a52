@@ -44,8 +44,8 @@
 /dev/block/platform/soc.0/7824900.sdhci/by-name/rfg_[0-9]*                            u:object_r:modem_efs_partition_device:s0
 
 # HALs
-/system/vendor/bin/hw/android\.hardware\.light@2\.0-service\.m8qlul                   u:object_r:hal_light_default_exec:s0
-/system/vendor/bin/hw/android\.hardware\.usb@1\.0-service\.m8qlul                     u:object_r:hal_usb_default_exec:s0
+/system/vendor/bin/hw/android\.hardware\.light@2\.0-service\.a52                   u:object_r:hal_light_default_exec:s0
+/system/vendor/bin/hw/android\.hardware\.usb@1\.0-service\.a52                     u:object_r:hal_usb_default_exec:s0
 
 # Vendor blobs
 /system/vendor/bin/hcheck-v2                                                          u:object_r:wv-prov_exec:s0

@@ -1,7 +1,7 @@
 [
   {
-    "repository": "android_kernel_htc_msm8939",
-    "target_path": "kernel/htc/msm8939",
+    "repository": "android_kernel_htc_msm8916",
+    "target_path": "kernel/htc/msm8916",
   },
   {
     "repository": "android_device_qcom_common",

@@ -13,12 +13,12 @@
 # limitations under the License.
 
 BOARD_VENDOR := htc
-DEVICE_PATH := device/htc/m8qlul
+DEVICE_PATH := device/htc/a52
 
 TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
 
 # Assertions
-#TARGET_OTA_ASSERT_DEVICE := htc_m8qlul
+#TARGET_OTA_ASSERT_DEVICE := htc_a52
 #TARGET_BOARD_INFO_FILE ?= $(DEVICE_PATH)/board-info.txt
 
 # Architecture
@@ -132,14 +132,14 @@ BOARD_KERNEL_SEPARATED_DT := true
 BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_KERNEL_TAGS_OFFSET := 0x01d88000
 BOARD_RAMDISK_OFFSET := 0x01f88000
-TARGET_KERNEL_SOURCE := kernel/htc/msm8939
+TARGET_KERNEL_SOURCE := kernel/htc/msm8916
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
 TARGET_KERNEL_HEADER_ARCH := arm64
 ifeq ($(WITH_TWRP), true)
 TARGET_KERNEL_CONFIG := twrp_defconfig
 else
-TARGET_KERNEL_CONFIG := m8qlul_vz_defconfig
+TARGET_KERNEL_CONFIG := a52_defconfig
 endif
 
 # Lights
@@ -203,7 +203,7 @@ BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_RECOVERY_SWIPE := true
 BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_23x41.h\"
 BOARD_USES_MMCUTILS := true
-#TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_m8qlul
+#TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_a52
 ifneq ($(WITH_TWRP),true)
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 endif
@@ -249,4 +249,4 @@ WIFI_DRIVER_FW_PATH_STA := "sta"
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit from the proprietary version
--include vendor/htc/m8qlul/BoardConfigVendor.mk
+-include vendor/htc/a52/BoardConfigVendor.mk

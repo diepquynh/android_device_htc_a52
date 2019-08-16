@@ -10,7 +10,7 @@
 #undef LOG_TAG
 #endif
 
-#define LOG_TAG "android.hardware.usb@1.0-service.m8qlul"
+#define LOG_TAG "android.hardware.usb@1.0-service.a52"
 #define UEVENT_MSG_LEN 2048
 
 namespace android {
